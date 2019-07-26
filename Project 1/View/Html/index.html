@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title> 
+    <script src="/Project 1/Models/product.js"></script>
+    <script src="/Project 1/Models/productoperations.js"></script>
+    <script src="/Project 1/Controllers/productctrl.js"></script>
+    <script>
+    function showPrice(){
+        var price = window.document.getElementById('price').value;
+        alert("Price is "+price);
+    }
+    </script> 
+    <link rel="stylesheet" href="../Css/Main.css">
+
+</head>
+<body>
+    <p>Items in Cart <span id='viewcart'></span></p>
+    <label for="">Enter the Price</label>
+   <input id='price' type="text" placeholder="Type Price Here " >
+   <!-- <input type="range"> -->
+   <button id='searchBt'>Search</button>
+   <button id='loadBt'>Load All</button>
+   <div>
+       <ul id='products'> 
+          <!-- Dynamic-->
+       </ul>
+   </div>
+</body>
+</html>
