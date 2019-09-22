@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to check if "fruits" is an array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<select id="esl" >
+<option value="Banana">Banana </option>
+<option value="Orange">Orange </option>
+<option value="Apple"> Apple</option>
+<option value="Mango">Mango </option>
+</select>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  var x = document.getElementById("demo");
+    var z = document.getElementById("demo2");
+    var y = document.getElementById("esl").value;
+    var n = fruits.findIndex(ele=> ele == y);
+  x.innerHTML = Array.isArray(fruits);
+  z.innerHTML = n+ '  ' + y;
+}
+</script>
+
+</body>
+</html>
